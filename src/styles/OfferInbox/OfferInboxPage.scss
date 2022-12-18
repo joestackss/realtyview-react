@@ -1,0 +1,170 @@
+@import '../colors';
+
+.offer-inbox-page > main > .rs-container {
+  overflow: hidden;
+}
+
+.offer-inbox-page .page-context.isDesktop {
+  height: 975px;
+}
+
+.offer-inbox-page .page-context.isMobile {
+  min-height: 650px;
+}
+
+.offer-inbox-page-fixed-height .page-context.isMobile {
+  height: 100vh;
+}
+
+.offer-inbox-wrapper {
+  flex: 1;
+  overflow: hidden;
+
+  /* So that panel shadows are not clipped */
+  padding: 10px;
+  margin: -10px;
+
+  display: flex;
+  align-items: stretch;
+}
+
+.offer-inbox-wrapper-desktop {
+  .offer-inbox-sidebar-panel {
+    flex-shrink: 0;
+    width: 200px;
+    margin-right: 24px;
+  }
+
+  .offer-inbox-list-panel {
+    flex-grow: 1;
+  }
+}
+
+.offer-inbox-wrapper-mobile {
+  padding: 10px;
+  margin: -10px -25px;
+  .offer-inbox-mobile-panel.rs-panel {
+    width: 100%;
+    border-radius: 0;
+    .rs-panel-body {
+      height: 100%;
+      padding: 24px;
+      position: relative;
+    }
+  }
+}
+
+.offer-inbox-sidebar-drawer {
+  z-index: 500;
+  position: absolute;
+  top: 70px;
+  left: -250px;
+  height: calc(100% - 70px);
+  background-color: $white;
+  box-shadow: 10px 0 7px rgba(0, 0, 0, 0.12);
+  padding: 15px;
+  width: 200px;
+  transition: left ease 0.5s;
+}
+
+.offer-inbox-sidebar-drawer-close-btn {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  padding: 12px;
+  line-height: 0;
+  background-color: $white;
+  color: $form-outline;
+  cursor: pointer;
+}
+
+.offer-inbox-sidebar-drawer-open {
+  left: 0px; 
+  .offer-inbox-sidebar-drawer-close-btn {
+    display: block;
+  }
+}
+
+.offer-inbox-sidebar-panel.rs-panel {
+  .rs-panel-body {
+    height: 100%;
+  }
+}
+
+.offer-inbox-marker {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.offer-inbox-agent-marker {
+  width: 11px;
+  height: 11px;
+  padding: 2px;
+  border-radius: 3px;
+  background-color: $light-purple;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+@each $name, $color in $color-from-relationship {
+  .offer-inbox-marker-#{$name} {
+    background-color: $color;
+  }
+}
+
+.offer-inbox-status-tag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  text-transform: capitalize;
+  border-radius: 2px;
+}
+
+.offer-inbox-value-na {
+  color: $text-content;
+}
+
+$tag-color-from-status: (
+  "open": $info,
+  "in-process": $warning,
+  "accepted": $success,
+  "closed": $secondary,
+  "cancelled": $danger,
+);
+
+$tag-bgcolor-from-status: (
+  "open": $light-blue,
+  "in-process": #ffeecc,
+  "accepted": #ddf6ed,
+  "closed": $light-purple,
+  "cancelled": #fff2f5,
+);
+
+@each $name, $color in $tag-color-from-status {
+  .offer-inbox-status-tag-#{$name} {
+    background-color: map-get($tag-bgcolor-from-status, $name);
+    color: $color;
+  }
+}
+
+.offer-inbox-search {
+  border-radius: 4px;
+  margin-bottom: 15px;
+  .rs-input-group-addon {
+    background-color: $white;
+  }
+  .rs-input {
+    background-color: $white;
+    padding-left: 0;
+  }
+  &:not(.rs-input-group-inside) {
+    border-color: $form-outline;
+    &:not(.rs-input-group-disabled):hover,
+    &:not(.rs-input-group-disabled).rs-input-group-focus {
+      border-color: $primary;
+    }
+  }
+}

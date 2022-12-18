@@ -1,0 +1,69 @@
+@import '../colors';
+
+.calendar-quick-add-popover {
+  width: 100%;
+  max-width: 450px;
+  padding: 24px;
+
+  // Hide the arrow so that it will not look awkward on preventOverflow
+  .rs-popover-arrow {
+    display: none;
+  }
+}
+
+.calendar-quick-add-details-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  
+  .calendar-icon {
+    flex-shrink: 0;
+    margin-right: 7px;
+  }
+}
+
+.calendar-quick-add-details-input {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.calendar-quick-add-add-time-btn {
+  flex-shrink: 0;
+  margin-left: 7px;
+  padding: 3px;
+  line-height: 1;
+}
+
+.calendar-quick-add-date-input-group {
+  flex-grow: 1;
+  .calendar-quick-add-date-input-row {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.calendar-quick-add-date-separator {
+  flex-shrink: 0;
+  padding: 0 2px;
+}
+
+.calendar-quick-add-description-editor {
+  min-height: 100px;
+}
+
+.calendar-quick-add-details-input-untouched {
+  padding: 7px 12px;
+  line-height: 1em;
+  height: 36px;
+  &:not(:hover) {
+    border: 1px solid transparent;
+  }
+}
+
+// Adjustments because there are some spaces in the SVG.
+.calendar-quick-add-description-input, .calendar-quick-add-date-input {
+  .calendar-icon {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+}

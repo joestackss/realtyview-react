@@ -1,0 +1,71 @@
+.rv-sidebar {
+  .sidebar-toggle-btn-wrap {
+    position: absolute;
+    bottom: 20px;
+    left: 2px;
+  }
+
+  hr {
+    margin: 1em;
+    color: #8e8e93;
+    border-color: #8e8e93;
+    margin: 20px;
+  }
+
+  .logo-wrap {
+    text-align: center;
+
+    img {
+      width: 80%;
+      max-width: 172px;
+    }
+  }
+
+  .rs-sidenav.rs-sidenav.rs-sidenav-collapse-in .rs-sidenav-nav > ul {
+    padding-left: 22px;
+  }
+
+  .rs-sidenav.rs-sidenav-collapse-in .rs-sidenav-body label {
+    margin-left: 42px;
+  }
+
+  .rs-sidenav-subtle {
+    background: transparent;
+    margin-top: 45px;
+  }
+
+  .rs-nav-default .rs-nav-item:not(.rs-nav-item-active):not(.rs-nav-item-disabled) > .rs-nav-item-content:hover,
+  .rs-nav-default .rs-nav-item:not(.rs-nav-item-active):not(.rs-nav-item-disabled) > .rs-nav-item-content:focus {
+    background: inherit;
+  }
+
+  .sidebar-custom-icon {
+    font-size: 16px;
+    margin-right: 20px;
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    line-height: 1.25;
+    color: #6E768E;
+  }
+
+  .dashboard-icon path {
+    fill: #000000;
+  }
+
+  .properties-icon path {
+    fill: #000000;
+  }
+
+  .offer-icon path {
+    fill: #000000;
+  }
+
+  .pie-chart-icon path {
+    fill: #000000;
+  }
+
+  .settings-icon path {
+    fill: #000000;
+  }
+}

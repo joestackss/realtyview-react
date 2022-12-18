@@ -1,0 +1,178 @@
+.offer-management-page {
+  section#offer-stats {
+    margin-top: 20px;
+
+    .rs-panel .rs-panel-body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .stat-details {
+      text-align: right;
+    }
+
+    .stat-details .stat-totals {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .stat-details .stat-type {
+      margin-top: 0;
+      color: #707e91;
+      font-size: 14px;
+    }
+
+    .offers-sent-icon-wrap {
+      display: table;
+      width: 70px;
+      height: 70px;
+      background-color: #727cf5;
+      border-radius: 50%;
+      text-align: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-top: 25px;
+
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .offers-received-icon-wrap {
+      display: table;
+      width: 70px;
+      height: 70px;
+      background-color: #ffbc00;
+      border-radius: 50%;
+      text-align: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-top: 25px;
+
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .offers-open-icon-wrap {
+      display: table;
+      width: 70px;
+      height: 70px;
+      background-color: #08cf97;
+      border-radius: 50%;
+      text-align: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-top: 25px;
+
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .offers-closed-icon-wrap {
+      display: table;
+      width: 70px;
+      height: 70px;
+      background-color: #fa5c7c;
+      border-radius: 50%;
+      text-align: center;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-top: 25px;
+
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+
+  section#offers {
+    margin-top: 20px;
+
+    button.default-filter {
+      background: #6c757d;
+      font-size: 12px;
+      line-height: 8.6px;
+      color: #ffffff;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .toolbar .display-filters {
+      display: flex;
+      align-items: center;
+    }
+
+    .toolbar .display-filters .rs-btn {
+      margin-left: 10px;
+    }
+
+    .toolbar .right-toolbar {
+      display: flex;
+      align-items: center;
+
+      .offers-search {
+        width: 200px;
+      }
+
+      .offers-search .rs-input-group-addon {
+        padding-top: 15px;
+      }
+
+      .rs-btn {
+        padding: 10px 16px;
+        margin-left: 10px;
+      }
+    }
+
+    .tag {
+      display: table;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+
+    .tag-open {
+      background-color: #08cf97;
+      color: #ffffff;
+    }
+
+    .tag-closed {
+      background-color: #6c757d;
+      color: #ffffff;
+    }
+
+    #offer-list {
+      margin-top: 20px;
+      font-size: 14px;
+
+      .rs-table-header-row-wrapper .rs-table-cell-content {
+        font-weight: bold;
+        color: #59626a;
+      }
+
+      .client-name {
+        margin-left: 8px;
+      }
+    }
+  }
+}

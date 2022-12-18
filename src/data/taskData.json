@@ -1,0 +1,37 @@
+[
+  {
+    "label": "Dominic Keller",
+    "value": "Dominic Keller",
+    "role": "Landlord"
+  },
+  {
+    "label": "Paul J. Friend",
+    "value": "Paul J. Friend",
+    "role": "Buyer"
+  },
+  {
+    "label": "Tom Jones",
+    "value": "Tom Jones",
+    "role": "Seller"
+  },
+  {
+    "label": "Bill Ackman",
+    "value": "Bill Ackman",
+    "role": "Renter"
+  },
+  {
+    "label": "Manny Pacman",
+    "value": "Manny Pacman",
+    "role": "Politician"
+  },
+  {
+    "label": "Risa Pearson",
+    "value": "Risa Pearson",
+    "role": "Buyer"
+  },
+  {
+    "label": "Bryan J. Leullen",
+    "value": "Bryan J. Leullen",
+    "role": "Seller"
+  }
+]

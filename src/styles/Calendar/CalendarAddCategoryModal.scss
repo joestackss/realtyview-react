@@ -1,0 +1,73 @@
+@import '../colors';
+
+.calendar-add-category-modal {
+  .rs-modal-dialog {
+    max-width: 350px;
+    margin: auto;
+  }
+  .rs-modal-content {
+    padding: 24px;
+  }
+  .rs-modal-body {
+    padding-bottom: 0;
+  }
+  .rs-modal-header-close {
+    display: none;
+  }
+}
+
+.calendar-add-category-field {
+  margin-bottom: 24px;
+}
+
+.calendar-add-category-label {
+  margin-bottom: 10px;
+  color: $text-gray;
+}
+
+.calendar-add-category-color-select {
+  margin-left: 0;
+  width: 100%;
+  max-width: 240px;
+  .rs-grid-container-fluid {
+    padding: 0;
+  }
+}
+
+.calendar-add-category-color-option {
+  margin: 5px 10px 5px 0;
+  width: 20px;
+  height: 20px;
+  .rs-radio-wrapper {
+    position: static;
+  }
+  .rs-radio-wrapper::before {
+    width: 20px;
+    height: 20px;
+  }
+  .rs-radio-wrapper .rs-radio-inner::before {
+    border: none;
+    width: 20px;
+    height: 20px;
+  }
+  .rs-radio-wrapper .rs-radio-inner::after {
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid white;
+    background-color: transparent;
+  }
+  .rs-radio-checker {
+    padding: 0;
+    min-height: initial;
+  }
+}
+
+@each $name, $color in $color-from-name {
+  .calendar-add-category-color-option-#{$name} {
+    .rs-radio-wrapper .rs-radio-inner::before {
+      background-color: $color;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.property-reports-page {
+  .tab-search-content {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .rs-form-group {
+    position: relative;
+  }
+
+  .rs-panel {
+    overflow: inherit;
+  }
+
+  .rs-list-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+  }
+
+  #address-autocomplete-popover {
+    width: 100%;
+    top: 64px;
+    padding: 0;
+  }
+
+  form#advanced-search button {
+    margin-right: 5px;
+  }
+}

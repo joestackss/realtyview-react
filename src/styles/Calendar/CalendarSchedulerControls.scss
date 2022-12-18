@@ -1,0 +1,44 @@
+@import '../colors';
+
+.calendar-scheduler-controls-wrapper {
+  margin-bottom: 24px;
+}
+
+.calendar-scheduler-controls {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-scheduler-controls.calendar-scheduler-controls-full {
+  .calendar-scheduler-controls-btn-group:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+}
+
+.calendar-scheduler-controls.calendar-scheduler-controls-condensed {
+  justify-content: space-between;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.calendar-scheduler-controls-label {
+  text-transform: uppercase;
+  margin-right: 14px;
+  flex-shrink: 1;
+  font-size: 20px;
+}
+
+.calendar-scheduler-controls-btn-group {
+  flex-shrink: 0;
+}
+
+.calendar-nav-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.calendar-settings-btn {
+  color: $form-icon;
+}

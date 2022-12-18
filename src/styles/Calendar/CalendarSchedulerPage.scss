@@ -1,0 +1,16 @@
+@import '../colors';
+
+.calendar-scheduler-label {
+  text-transform: uppercase;
+  margin-right: 14px;
+}
+
+.calendar-scheduler-body.calendar-scheduler-body-full {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 8px;
+
+  .calendar-scheduler {
+    flex: 1;
+  }
+}

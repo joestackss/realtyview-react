@@ -1,0 +1,354 @@
+@import './colors.scss';
+
+.offer-view-page {
+  .page-context {
+    p {
+      color: #707e91;
+      font-size: 14px;
+    }
+
+    h3 {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #59626a;
+    }
+
+    label {
+      color: #59626a;
+      text-transform: none;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .phone-icon-purple {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #727cf5;
+      }
+    }
+
+    .phone-icon-blue {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #38afd1;
+      }
+    }
+
+    .mail-icon-purple {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #727cf5;
+      }
+    }
+
+    .mail-icon-blue {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #38afd1;
+      }
+    }
+
+    .home-icon-purple {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #727cf5;
+      }
+    }
+
+    .location-icon-red {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+
+      path {
+        fill: #fa5c7c;
+      }
+    }
+
+    .user-icon-green {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #08cf97;
+      }
+    }
+
+    .smart-offer-icon-blue {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #38afd1;
+      }
+    }
+
+    .attachments-icon-red {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #fa5c7c;
+      }
+    }
+
+    .location-icon-yellow {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #ffbc00;
+      }
+    }
+
+    .comments-icon-purple {
+      width: 15px;
+      height: 15px;
+      margin-right: 8px;
+
+      path {
+        fill: #727cf5;
+      }
+    }
+
+    .buyer-information .rs-tag {
+      font-size: 10px;
+      text-transform: uppercase;
+    }
+
+    .buyer-information h3.buyer-name {
+      color: #313a46;
+      margin-right: 10px;
+    }
+
+    .buyer-narrative label {
+      margin-bottom: 0;
+    }
+
+    .buyer-narrative .confidence-score {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .buyer-narrative .rs-icon-check {
+      color: #08cf97;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .property-information {
+      .property-information__address-wrap {
+        margin-top: 15px;
+      }
+
+      .property-information__address-wrap .full-address {
+        font-size: 18px;
+        color: #59626a;
+        font-weight: 600;
+      }
+
+      .property-information__address-wrap .view-google-maps-link {
+        font-size: 14px;
+      }
+    }
+
+    .listing-broker-details-panel {
+      .broker-name {
+        font-size: 18px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+    }
+
+    .submit-offer-details-panel {
+      button {
+        margin-right: 10px;
+      }
+    }
+
+    .offer-attachments-panel {
+      .vertical-seperator,
+      .address {
+        color: #707e91;
+        font-size: 16px;
+        margin-left: 5px;
+      }
+
+      ul.attachments-list {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid #f0f4fa;
+          padding-bottom: 10px;
+          padding-top: 10px;
+        }
+
+        li label {
+          width: 200px;
+        }
+
+        li .document-meta {
+          flex-grow: 1;
+        }
+
+        li .document-meta .document-meta__name {
+          font-weight: bold;
+          color: $primary;
+        }
+      }
+
+      .add-document-btn {
+        cursor: pointer;
+      }
+    }
+
+    .offer-timeline-panel {
+      .offer-id {
+        margin-left: 5px;
+        color: $primary;
+      }
+
+      .rs-timeline {
+        margin-top: 15px;
+      }
+
+      .rs-timeline-item-last .rs-timeline-item-dot::before {
+        background-color: #d9d9d9;
+      }
+
+      .rs-timeline .rs-timeline-item.active .rs-timeline-item-dot::before {
+        background-color: map-get($color-from-name, "green-3");
+      }
+    }
+
+    .offer-comments-panel {
+      height: 598px;
+      position: relative;
+      overflow-y: auto;
+
+      .rs-panel-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+
+      .comments {
+        flex-grow: 1;
+        margin-bottom: 10px;
+        overflow-y: auto;
+      }
+
+      .comments .comment__day {
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+
+      .comment__message-group.outbound {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 15px;
+      }
+
+      .comment__message-group.outbound .user-img {
+        margin-left: 10px;
+      }
+
+      .comment__message-group.outbound .msg {
+        background-color: #fef5e4;
+        width: 240px;
+        color: #59626a;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      .comment__message-group.outbound .comment__message-details {
+        .sender {
+          text-align: right;
+        }
+      }
+
+      .comment__message-group.inbound {
+        display: flex;
+        margin-top: 15px;
+      }
+
+      .comment__message-group.inbound .user-img {
+        margin-right: 10px;
+      }
+
+      .comment__message-group.inbound .msg {
+        background-color: #f1f3fa;
+        width: 240px;
+        color: #59626a;
+        padding: 10px;
+        border-radius: 4px;
+      }
+
+      .comments-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #f0f4fa;
+        border-radius: 5px;
+        width: 100%;
+        height: 62px;
+        padding: 10px;
+      }
+
+      .comments-footer input[type="text"] {
+        flex-grow: 1;
+        margin-right: 5px;
+        border-radius: 3px;
+        height: 38px;
+        outline: none;
+        border: 1px solid #fff;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+.relationship-link-modal {
+  .agent-relationships-list {
+    margin-bottom: 20px;
+  }
+
+  .agent-relationships-list .rs-list-item .rs-list-item-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rs-modal-footer {
+    margin-top: 20px;
+  }
+
+  button {
+    height: 40px;
+  }
+}

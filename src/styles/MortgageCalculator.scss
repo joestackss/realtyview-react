@@ -1,0 +1,230 @@
+//dashboard css
+.mortgage-calculator-page {
+  background: #fafafe;
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .rs-panel hr {
+    margin: 0;
+    border-color: lightgrey;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .sidebar-toggle-btn-wrap {
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .sidebar-custom-icon {
+    font-size: 16px;
+    margin-right: 20px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    line-height: 1.25;
+  }
+
+  .dashboard-icon path {
+    fill: #000000;
+  }
+
+  .properties-icon path {
+    fill: #000000;
+  }
+
+  .offer-icon path {
+    fill: #000000;
+  }
+
+  .pie-chart-icon path {
+    fill: #000000;
+  }
+
+  .settings-icon path {
+    fill: #000000;
+  }
+
+  .fieldInput {
+    width: 100%;
+    height: 100%;
+
+    input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 7px;
+      outline: none;
+      width: inherit;
+      height: inherit;
+    }
+  }
+
+  .panelStyle {
+    border-radius: 5px;
+    box-shadow: 0 0 8px 7px rgba(114, 124, 245, 0.03);
+  }
+
+  //mortgage calculator css
+
+  .panel-container {
+    width: 100%;
+    height: 900px;
+
+    display: flex;
+    // justify-content: space-evenly;
+  }
+
+  .panel-container .panelcon-col1 {
+    width: 42.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .panel-container .panelcon-col2 {
+    width: 52.5%;
+    height: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-start;
+    align-items: center;
+  }
+
+  .panel-container .panelcon-col1-row1 {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 2.5%;
+    display: flex;
+    align-items: center;
+  }
+
+  .panel-container .panelcon-col1-row2 {
+    background-color: white;
+    width: 100%;
+    height: 30%;
+    padding: 20px;
+    box-shadow: 0 0 1em -8px;
+    border-radius: 5px;
+    margin-bottom: 2.5%;
+  }
+
+  .panel-container .panelcon-col1-row3 {
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    box-shadow: 0 0 1em -8px;
+    border-radius: 5px;
+    margin-bottom: 2.5%;
+  }
+
+  .Input-ListingData {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    input[type="text"] {
+      height: 100%;
+      width: 70%;
+      border-radius: 5px;
+      border-width: 1px;
+      border-color: lightgrey;
+      outline: none;
+    }
+
+    input[type="button"] {
+      width: 25%;
+      height: 100%;
+      outline: none;
+      border-radius: 5px;
+      background-color: #727cf5;
+      color: white;
+    }
+  }
+
+  .Buttons-Container {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    input[type="button"] {
+      width: 30%;
+      height: 100%;
+      outline: none;
+      border-radius: 5px;
+      color: white;
+    }
+
+    .GreenBtn {
+      background-color: rgb(8, 207, 151);
+    }
+
+    .GreyBtn {
+      background-color: rgb(108, 117, 125);
+    }
+  }
+
+  //mortgage details css
+  .mortList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mortTitle,
+  .mortPrice {
+    font-size: 14px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+  }
+
+  .mortTotal,
+  .mortTotalPrice {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  @media (min-width: 375px) {
+    .mortTotal,
+    .mortTotalPrice {
+      font-size: 17px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .mortTotal,
+    .mortTotalPrice {
+      font-size: 20px;
+    }
+  }
+
+  .mortgageDetails {
+    font-size: 20px;
+    padding-top: 25px;
+    font-weight: bold;
+    color: #727cf5;
+  }
+
+  .col2Title {
+    font-weight: bold;
+  }
+
+  //HomeOweners Expenses css
+
+  .homeownerExpenses {
+    min-height: 100px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    // padding-top: 25px;
+    font-weight: bold;
+    color: #727cf5;
+  }
+}

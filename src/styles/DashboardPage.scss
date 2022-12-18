@@ -1,0 +1,341 @@
+.dashboard-page {
+  background: #fafafe;
+
+  h3.section-title {
+    font-size: 16px;
+    line-height: 1.13;
+    letter-spacing: -0.3px;
+    color: #59626a;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .getting-started {
+    h3.getting-started__welcome {
+      font-size: 25px;
+      color: #727cf5;
+    }
+
+    .getting-started__widget-hide {
+      line-height: 1.14;
+      letter-spacing: -0.3px;
+      color: #d6dbe0;
+    }
+
+    .getting-started__questions {
+      h4 {
+        color: #08cf97;
+        margin-bottom: 10px;
+      }
+
+      ul.question-list {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .rs-panel.step {
+      min-height: 100px;
+      margin-bottom: 15px;
+
+      .rs-panel-body {
+        display: flex;
+      }
+
+      .step__email-img,
+      .step__add-contacts-img,
+      .step__invite-team-img {
+        display: table;
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        margin-right: 15px;
+        text-align: center;
+
+        img {
+          width: 32px;
+          margin-top: 14px;
+        }
+      }
+
+      .step__email-img {
+        background-color: #38afd1;
+      }
+
+      .step__add-contacts-img {
+        background-color: #ffbc00;
+      }
+
+      .step__invite-team-img {
+        background-color: #727cf5;
+      }
+
+      .step__details {
+        flex-grow: 1;
+
+        label {
+          color: #59626a;
+          text-transform: none;
+          font-size: 16px;
+          letter-spacing: 0.5px;
+        }
+
+        p {
+          color: #707e91;
+        }
+      }
+
+      .rs-icon-angle-right {
+        font-size: 34px;
+        margin-top: 15px;
+        margin-left: 15px;
+        color: #d6dbe0;
+      }
+    }
+  }
+
+  .deals-pipeline {
+    margin-top: 20px;
+
+    .deals-pipeline__filters {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+
+      .rs-picker-date {
+        margin-right: 10px;
+      }
+
+      .rs-picker-default .rs-picker-toggle.rs-btn {
+        padding-top: 11px;
+        padding-bottom: 11px;
+      }
+
+      .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret,
+      .rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+        top: 12px;
+      }
+    }
+
+    .deals-pipeline__bar {
+      width: 100%;
+      height: 98px;
+      display: flex;
+      flex-direction: row;
+      background-color: #daeef5;
+      margin-top: 20px;
+
+      .stage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-right: 2px solid #ffffff;
+        flex-grow: 1;
+
+        &:last-child {
+         border-right: none;
+        }
+
+        p {
+          margin-top: 0px;
+        }
+
+        p.amount {
+          color: #59626a;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .deals-pipeline__more-numbers {
+      width: 100%;
+      height: 98px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+
+      .number-group {
+        flex-grow: 1;
+        border-right: 1px solid #dddddd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          margin-top: 0px;
+        }
+
+        .amount {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+
+      .number-group:nth-child(2) .name {
+        color: #08cf97;
+      }
+
+      .number-group:nth-child(3) .name {
+        color: #fa5c7c;
+      }
+    }
+  }
+
+  .tasks {
+    height: 100%;
+
+    a:link {
+      color: #727cf5;
+      font-size: 14px;
+    }
+
+    .add-task-btn {
+      padding: 5px 10px;
+    }
+
+    ul.tasks__preview-list {
+      list-style-type: none;
+      margin-top: 20px;
+      padding: 0;
+
+      li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        p {
+          margin-top: 0px;
+          font-size: 14px;
+        }
+
+        .left {
+          display: flex;
+          flex-direction: row;
+          align-items: end;
+
+          .rs-checkbox-checker {
+            min-height: 45px;
+          }
+          .rs-checkbox-wrapper {
+            left: 0px;
+          }
+
+          .task-time {
+            color: #86959d;
+          }
+        }
+      }
+    }
+  }
+
+  .calendar {
+    height: 100%;
+
+    a:link {
+      color: #727cf5;
+      font-size: 14px;
+    }
+
+    .new-event-btn {
+      padding: 5px 10px;
+    }
+  }
+
+  .messages {
+    height: 100%;
+
+    .new-msg-btn {
+      padding: 5px 10px;
+    }
+
+    a:link {
+      color: #727cf5;
+      font-size: 14px;
+    }
+
+    ul.messages-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+
+      li {
+        display: flex;
+        margin-bottom: 20px;
+
+        .rs-avatar {
+          margin-right: 15px;
+        }
+
+        p {
+          margin-top: 0px;
+          font-size: 14px;
+        }
+
+        p.msg-group {
+          flex: 1;
+        }
+
+        .msg-sent-time {
+          font-size: 12px;
+          color: #d6dbe0;
+        }
+      }
+    }
+  }
+
+  .announcements {
+    height: 100%;
+
+    a:link {
+      color: #727cf5;
+      font-size: 14px;
+    }
+
+    ul.announcements-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+
+      li {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        align-items: center;
+
+        p {
+          font-size: 14px;
+        }
+
+        p.date {
+          font-size: 12px;
+          color: #d6dbe0;
+        }
+
+        img {
+          width: 40px;
+          min-width: 40px;
+          height: 30px;
+          margin-right: 20px;
+        }
+
+        .main-details {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

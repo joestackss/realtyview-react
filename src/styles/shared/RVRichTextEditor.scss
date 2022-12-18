@@ -1,0 +1,46 @@
+@import '../colors';
+
+.rv-rteditor-wrapper {
+  width: 100%;
+  border: 1px solid $form-outline;
+  border-radius: 7px; 
+  -webkit-transition: border-color ease-in-out 0.3s;
+  -moz-transition: border-color ease-in-out 0.3s;
+  transition: border-color ease-in-out 0.3s;
+
+  &:hover, &:active, &:focus-within {
+    border-color: $primary;
+  }
+}
+
+.rv-rteditor-toolbar {
+  border: none;
+  background-color: transparent;
+  margin-top: 5px;
+
+  .rdw-option-wrapper {
+    border: none;
+    -webkit-transition: background-color ease-in-out 0.3s;
+    -moz-transition: background-color ease-in-out 0.3s;
+    transition: background-color ease-in-out 0.3s;
+
+    &:hover {
+      box-shadow: none;
+      &:not(.rdw-option-disabled) {
+        background-color: $light;
+      }
+    }
+  }
+  .rdw-option-active {
+    border: none;
+    box-shadow: none;
+    background-color: $light;
+  }
+}
+
+.rv-rteditor-editor {
+  padding: 7px 12px;
+  font-size: 14px;
+  min-height: 200px;
+  max-height: 300px;
+}

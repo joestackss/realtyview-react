@@ -1,0 +1,80 @@
+@import '../colors';
+
+.offer-inbox-list {
+  .rs-table-row-header {
+    background-color: $light-purple;
+    .rs-table-cell {
+      background-color: initial;
+    }
+    .rs-table-cell-content {
+      font-size: 14px;
+      font-weight: 700;
+      color: $text-header;
+    }
+    .rs-table-cell-header-icon-sort,  
+    .rs-table-cell-header-icon-sort::after {
+      color: $form-outline;
+    }
+  }
+
+  .rs-table-row-header:hover {
+    .rs-table-cell-group,
+    .rs-table-cell {
+      background-color: initial;
+    }
+  }
+
+  .rs-table-row {
+    font-size: 14px;
+    color: $text-header;
+  }
+
+  .rs-table-row:not(.rs-table-row-header):hover {
+    cursor: pointer;
+    .rs-table-cell-group,
+    .rs-table-cell {
+      background-color: $dropdown-highlight;
+    }
+
+    .offer-inbox-list-item-hover-menu {
+      opacity: 1;
+    }
+  }
+}
+
+.offer-inbox-list-unread-cell {
+  font-weight: 700;
+}
+
+.offer-inbox-list-client-cell .rs-table-cell-content {
+  display: flex;
+  align-items: center;
+  .offer-inbox-marker {
+    margin-right: 10px;
+  }
+}
+
+.offer-inbox-list-item-hover-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 13px 0 5px;
+  display: flex;
+  align-items: center;
+
+  background-color: $dropdown-highlight;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3 linear;
+  transition: opacity 0.3s linear;
+
+  .rs-btn-icon {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    line-height: 1em;
+    margin-left: 0;
+  }
+}

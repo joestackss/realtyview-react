@@ -1,0 +1,50 @@
+@import '../colors';
+
+.chat-conversation-input-box {
+  display: flex;
+  align-items: flex-end;
+  background-color: $light-purple;
+}
+
+.chat-conversation-input-field.rs-input {
+  padding: 7px;
+  min-width: 0;
+  margin-right: 10px;
+  overflow: auto;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: 0;
+
+  &:hover, &:focus {
+    border-color: $primary;
+  }
+}
+
+.chat-conversation-input-box-controls {
+  flex-shrink: 0;
+  > .rs-btn:not(:first-child):not(.rs-btn-block) {
+    margin-left: 10px;
+  }
+}
+
+.chat-conversation-input-box-control-btn.rs-btn {
+  padding: 9px;
+  line-height: 0;
+}
+
+.chat-conversation-input-box.chat-conversation-input-box-full {
+  padding: 24px;
+  .chat-conversation-input-box-control-btn.rs-btn {
+    padding: 14px;
+    line-height: 0;
+  }
+}
+
+.chat-conversation-input-box.chat-conversation-input-box-condensed {
+  padding: 7px;
+  .chat-conversation-input-box-control-btn.rs-btn {
+    padding: 9px;
+    line-height: 0;
+  }
+}

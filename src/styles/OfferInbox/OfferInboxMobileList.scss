@@ -1,0 +1,175 @@
+@import '../colors';
+
+.offer-inbox-mobile-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .offer-inbox-search {
+    flex-shrink: 0;
+  }
+}
+
+.offer-inbox-mobile-list-header {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .rs-btn.rv-btn {
+    line-height: 1em;
+    padding: 10px 12px;
+  }
+}
+
+.offer-inbox-mobile-list-scrollable {
+  // So that the cell highlight does not look awkward
+  margin: 0 -20px;
+  padding: 0 20px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 1;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.offer-inbox-mobile-list-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.offer-inbox-mobile-list-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .rs-checkbox {
+    .rs-checkbox-checker {
+      padding: 0 0 0 26px;
+      min-height: 16px;
+    }
+    
+    .rs-checkbox-wrapper {
+      left: 0;
+      top: 0;
+    }
+
+    &.rs-checkbox-checked .rs-checkbox-inner::before {
+      background-color: $primary;
+    }
+
+    .rs-checkbox-checker:hover {
+      .rs-checkbox-wrapper .rs-checkbox-inner::before {
+        border-color: $primary;
+      }  
+    }
+  }
+}
+
+.offer-inbox-mobile-list-cell-wrapper {
+  &:not(:last-child) {
+    border-bottom: 1px solid $form-outline;
+  }
+}
+
+.offer-inbox-mobile-list-cell {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  // So that the cell highlight does not look awkward
+  margin: 0 -20px;
+  padding: 13px 20px;
+
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3 linear;
+  transition: background-color 0.3s linear;
+}
+
+.offer-inbox-mobile-list-cell:hover {
+  background-color: $dropdown-highlight;
+}
+
+
+.offer-inbox-mobile-list-unread-cell {
+  font-weight: 700;
+}
+
+.offer-inbox-mobile-list-cell-content {
+  flex: 1;
+  overflow: hidden;
+}
+
+.offer-inbox-mobile-list-cell-row {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 3px;
+  }
+}
+
+.offer-inbox-mobile-list-cell-sender-client {
+  flex: 1;
+  overflow: hidden;
+  & > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  display: flex;
+  align-items: center;
+
+  .offer-inbox-marker {
+    margin: 0 6px 0 2px;
+  }
+}
+
+.offer-inbox-mobile-list-cell-date {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.offer-inbox-mobile-list-cell-sender-broker {
+  flex: 1;
+  overflow: hidden;
+  & > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  display: flex;
+  align-items: center;
+  .offer-inbox-agent-marker {
+    margin-right: 4px;
+  }
+}
+
+.offer-inbox-mobile-list-cell-address {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.offer-inbox-mobile-list-cell-status {
+  flex-shrink: 0;
+  width: 70px;
+
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  .offer-inbox-status-tag {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.property-details-report-page {
+  .page-context {
+    .rs-panel {
+      height: 100%;
+    }
+
+    .property-main-img {
+      width: 100%;
+
+      &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+      }
+    }
+
+    .action-buttons .rs-btn {
+      margin-left: 10px;
+    }
+
+    h3.section-title {
+      font-size: 22px;
+      color: #1d2830;
+    }
+  }
+}

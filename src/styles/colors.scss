@@ -1,0 +1,141 @@
+// Helper functions
+
+// Slightly lighten a color
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+// Slightly darken a color
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+// Add colors here for global use
+
+$white: #ffffff;
+
+// Colors from the RealtyView Style Guide
+
+$primary: #727cf5;
+$primary-hover: #3f40eb;
+$primary-active: #3232ee;
+$primary-outline: #a8adf9;
+$primary-shadow: rgba(114, 124, 245, 0.3);
+
+$secondary: #6c757d;
+$secondary-hover: #484f55;
+$secondary-active: #43493B;
+$secondary-outline: #b9b9b9;
+$secondary-shadow: rgba(0, 0, 0, 0.05);
+
+$success: #08cf97;
+$success-hover: #179e69;
+$success-active: #158F61;
+$success-outline: #7be0be;
+$success-shadow: rgba(8, 207, 151, 0.3);
+
+$danger: #fa5c7c;
+$danger-hover: #f41b4c;
+$danger-active: #f41b4c;
+$danger-outline: #fc9bae;
+$danger-shadow: rgba(250, 92, 124, 0.15);
+
+$warning: #ffbc00;
+$warning-hover: #cf9007;
+$warning-active: #bf8511;
+$warning-outline: #ffd373;
+$warning-shadow: rgba(207, 144, 7, 0.3);
+
+$info: #38afd1;
+$info-hover: #2587aa;
+$info-active: #237f9e;
+$info-outline: #cae5ef;
+$info-shadow: rgba(37, 135, 170, 0.3);
+
+$dark: #313a46;
+$dark-hover: #191d24;
+$dark-active: #191d24;
+$dark-outline: #9fa2a7;
+$dark-shadow: rgba(0, 0, 0, 0.05);
+
+$light: #eef2f7;
+$light-hover: #cad6e6;
+$light-active: #c0cde1;
+$light-outline: #d8e0e6;
+$light-shadow: rgba(202, 214, 230, 0.5);
+
+$btn-text-light: $white;
+$btn-text-dark: #252c36;
+
+$text-header: #59626a;
+$text-content: #86959d;
+$text-gray: #707e91;
+$text-light: #d6dbe0;
+
+$form-outline: #d6dbe0;
+$form-disabled: #e4e7eb;
+$form-icon: $text-header;
+
+$dropdown-highlight: #f8f9fa; 
+$tag-base: #dfe0fc;
+$tag-text: $primary;
+
+$timeline-dot: $secondary;
+$timeline-tail: #cfd9e0;
+$timeline-current: $warning;
+
+/* Other colors */
+$light-purple: #f0f4fa;
+$light-blue: #daeef5;
+
+$color-from-name: (
+  "red-1": #ad1457,
+  "red-2": $danger,
+  "red-3": #e67c73,
+  "orange-1": #f4511e,
+  "orange-2": #ef6c00,
+  "yellow-1": $warning,
+  "green-1": #7cb342,
+  "green-2": #0b8043,
+  "green-3": $success,
+  "blue-1": $info,
+  "blue-2": #4285f4,
+  "blue-3": #3f51b5,
+  "purple-1": $primary,
+  "purple-2": #9e69af,
+  "brown-1": #795548,
+  "gray-1": $secondary
+);
+
+$contrast-text-color-from-name: (
+  "red-1": $white,
+  "red-2": $white,
+  "red-3": $white,
+  "orange-1": $white,
+  "orange-2": $white,
+  "yellow-1": $text-header,
+  "green-1": $white,
+  "green-2": $white,
+  "green-3": $white,
+  "blue-1": $white,
+  "blue-2": $white,
+  "blue-3": $white,
+  "purple-1": $white,
+  "purple-2": $white,
+  "brown-1": $white,
+  "gray-1": $white
+);
+
+$color-from-relationship: (
+  "buyer": $info,
+  "seller": $danger,
+  "renter": $primary,
+  "landlord": $warning,
+);
+
+$bgcolor-from-relationship: (
+  "buyer": $light-blue,
+  "seller": #fff2f5,
+  "renter": $light-purple,
+  "landlord": #ffeecc,
+);

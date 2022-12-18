@@ -1,0 +1,91 @@
+@import '../colors';
+
+.chat-overview-conversation-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.chat-overview-conversation-item-avatar.rs-avatar {
+  flex-shrink: 0;
+  width: 47px;
+  height: 47px;
+  margin-right: 15px;
+  .rs-avatar-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.chat-overview-conversation-item-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-overview-conversation-item-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 8px;
+}
+
+.chat-overview-conversation-item-name {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.chat-overview-conversation-item-date {
+  flex-shrink: 0;
+
+  font-size: 10px;
+  color: $text-light;
+}
+
+.chat-overview-conversation-item-body {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.chat-overview-conversation-item-message {
+  flex-grow: 1;
+  align-self: stretch;
+  overflow-y: hidden;
+  height: 42px;
+  > span {
+    text-overflow: clip;
+    margin-bottom: 0;
+  }
+
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-content;
+
+  &.chat-overview-conversation-item-message-unread {
+    color: $text-gray;
+  }
+}
+
+.chat-overview-conversation-item-unread-marker {
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  background-color: $info;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.chat-overview-conversation-item-options {
+  flex-shrink: 0;
+  .rs-btn-icon {
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+  }
+  margin-left: 10px;
+}

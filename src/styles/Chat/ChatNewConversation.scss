@@ -1,0 +1,36 @@
+@import '../colors';
+
+.chat-new-conversation {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+
+.chat-new-conversation > .chat-new-conversation-window {
+  flex: 1;
+}
+
+.chat-new-conversation-user-select {
+  border-radius: 4px;
+  margin-bottom: 15px;
+  .rs-input-group-addon {
+    background-color: $white;
+  }
+  &:not(.rs-input-group-inside) {
+    &:not(.rs-input-group-disabled):hover,
+    &:not(.rs-input-group-disabled):focus-within,
+    &:not(.rs-input-group-disabled).rs-input-group-focus {
+      border-color: $primary;
+    }
+  }
+  .rv-picker {
+    border: none;
+  }
+  .rs-picker-toggle-caret {
+    display: none;
+  }
+  .rs-input-group-addon {
+    font-weight: 700;
+  }
+}

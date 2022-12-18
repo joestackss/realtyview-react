@@ -1,0 +1,61 @@
+@import '../colors';
+
+.calendar-scheduler-filter {
+  width: 150px;
+}
+
+.calendar-scheduler-filter.calendar-scheduler-filter-horizontal {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.calendar-scheduler-filter-title {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.calendar-scheduler-filter-checkbox-group.calendar-scheduler-filter-checkbox-group-horizontal {
+  display: flex;
+  width: 100%;
+}
+
+.calendar-scheduler-filter-checkbox-col {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.calendar-scheduler-filter-checkbox {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .rs-checkbox-checker {
+    padding: 0 0 0 26px;
+    min-height: 16px;
+  }
+  .rs-checkbox-wrapper {
+    left: 0;
+    top: 0;
+  }
+}
+
+@mixin calendar-scheduler-filter-colored-checkbox($colorName, $palette) {
+  .calendar-scheduler-filter-checkbox-#{$colorName} {
+    .rs-checkbox-wrapper .rs-checkbox-inner::before {
+      border: 2px solid #{$palette};
+    }
+
+    &.rs-checkbox-checked .rs-checkbox-inner::before {
+      background-color: #{$palette};
+    }
+
+    .rs-checkbox-checker:hover {
+      .rs-checkbox-wrapper .rs-checkbox-inner::before {
+        border-color: #{$palette};
+      }  
+    }
+  }
+}
+
+@each $name, $color in $color-from-name {
+  @include calendar-scheduler-filter-colored-checkbox($name, $color);
+}

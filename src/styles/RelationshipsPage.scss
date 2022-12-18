@@ -1,0 +1,114 @@
+.relationships-page {
+  .rs-panel {
+    height: 100%;
+  }
+
+  button.default-filter {
+    background: #6c757d;
+    font-size: 12px;
+    line-height: 8.6px;
+    color: #ffffff;
+  }
+
+  .relationships-wrap {
+    .show-filters {
+      display: flex;
+      align-items: center;
+
+      button {
+        margin-left: 10px;
+      }
+    }
+
+    .relationships-search {
+      max-width: 225px;
+      margin-right: 10px;
+
+      .rs-input-group-addon {
+        padding: 14px 13px 8px 13px;
+      }
+    }
+
+    #relationships-list {
+      margin-top: 20px;
+
+      .rs-table-cell-content {
+        font-size: 14px;
+      }
+
+      .actions-cell .rs-table-cell-content {
+        padding: 5px 10px;
+      }
+
+      .dot {
+        margin-right: 10px;
+      }
+
+      .relationship span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  #relationship-details {
+    .avatar {
+      display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: #ffbc00;
+      margin-right: 15px;
+    }
+
+    .name {
+      color: #59626a;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .action-buttons {
+      margin-top: 10px;
+      margin-left: 70px;
+
+      button {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-right: 5px;
+      }
+    }
+
+    ul.upcoming-tasks {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}
+
+.select-relationship-type-modal {
+  h3 {
+    font-size: 18px;
+    color: #727cf5;
+    text-transform: uppercase;
+  }
+
+  .options {
+    display: flex;
+    margin-top: 20px;
+
+    .option-btn {
+      font-size: 14px;
+      text-transform: initial;
+      padding: 6px 24px;
+      margin-right: 10px;
+
+      input[type="checkbox"] {
+        display: none;
+      }
+    }
+
+    .option-btn.selected {
+      border: 2px solid grey;
+    }
+  }
+}

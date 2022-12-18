@@ -1,0 +1,72 @@
+@import '../colors';
+
+.calendar-month-scheduler {
+  position: relative;
+
+  .calendar-month-scheduler-events-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.calendar-month-scheduler-table {
+  width: 100%;
+  height: 700px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid $light;
+
+  thead > tr {
+    background-color: $light;
+    height: 42px;
+  }
+
+  th {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  td {
+    border: 1px solid $light;
+    vertical-align: top;
+  }
+}
+
+.calendar-month-scheduler-cell-label {
+  font-size: 0.625rem;
+  font-weight: 600;
+
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
+  margin: 4px;
+  background-color: $light;
+  float: right;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-month-scheduler-cell-current-date {
+  .calendar-month-scheduler-cell-label {
+    background-color: $primary-outline;
+    color: $white;
+  }
+}
+
+.calendar-month-scheduler.calendar-month-scheduler-condensed {
+  margin-left: -24px;
+  margin-right: -24px;
+
+  .calendar-month-scheduler-table {
+    height: 585px;
+  }
+
+  .calendar-month-scheduler-cell-label {
+    float: none;
+    margin: 4px auto;
+  }
+}

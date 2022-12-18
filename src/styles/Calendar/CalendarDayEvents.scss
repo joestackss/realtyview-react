@@ -1,0 +1,75 @@
+@import '../colors';
+
+.calendar-day-events-popover {
+  width: 200px;
+  padding: 15px;
+
+  // Hide the arrow so that it will not look awkward on preventOverflow
+  .rs-popover-arrow {
+    display: none;
+  }
+}
+
+.calendar-day-events-header {
+  color: $text-header;
+  text-align: center;
+  margin-bottom: 10px;
+  h3.calendar-day-events-date {
+    line-height: 1em;
+  }
+  span.calendar-day-events-day {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+}
+
+.calendar-day-events-item-wrapper {
+  display: flex;
+  padding: 2px 6px;
+  cursor: pointer;
+}
+
+.calendar-day-events-item-time {
+  padding: 1px 5px 1px 0;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.calendar-day-events-item {
+  flex: 1;
+  border-radius: 2px;
+  padding: 1px 10px;
+  color: $white;
+  font-size: 12px; 
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: auto;
+
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.calendar-day-events-item-short {
+  text-align: left;
+}
+
+@each $name, $color in $color-from-name {
+  .calendar-day-events-item-#{$name} {
+    background-color: $color;
+    color: map-get($contrast-text-color-from-name, $name);
+  }
+
+  .calendar-day-events-item-wrapper:hover {
+    .calendar-day-events-item-#{$name} {
+      background-color: shade($color, 20%);
+    }
+  }
+}

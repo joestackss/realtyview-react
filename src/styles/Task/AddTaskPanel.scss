@@ -1,0 +1,76 @@
+.add-task-panel {
+  // z-index: -1053;
+
+  .primaryButton {
+    border-radius: 3px;
+    background-color: #727cf5;
+    color: white;
+  }
+
+  .rs-radio.outlined {
+    border: 0.5px solid #727cf5;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
+
+  .rs-radio-checker > label {
+    color: #727cf5;
+  }
+
+  .rs-radio-group-picker .rs-radio-checker {
+    padding: 0;
+    min-height: auto;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rs-radio.rs-radio-checked {
+    background-color: #727cf5;
+    .rs-radio-checker > label {
+      color: white;
+    }
+  }
+
+  .subTaskName {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    height: 100%;
+  }
+
+  .attachmentField {
+    margin-top: 30px;
+    // margin-bottom: 15px;
+    height: 100%;
+  }
+
+  .saveButton {
+    width: 38px;
+    padding: 0px;
+    height: 38px;
+    background-color: transparent;
+
+    .saveButtonIcon {
+      width: 38px;
+      padding: 0px;
+      height: 38px;
+      font-size: 38px;
+      line-height: 1;
+      color: #d6dbe0;
+    }
+  }
+
+  .uploadFile {
+    // display: flex;
+    width: 209px;
+    height: 100%;
+    border-radius: 3px;
+    border: solid 1px #d6dbe0;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

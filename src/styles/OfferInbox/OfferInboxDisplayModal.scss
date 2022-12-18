@@ -1,0 +1,77 @@
+@import '../colors';
+
+.offer-inbox-display-modal {
+  font-size: 14px;
+  .rs-modal-content {
+    padding: 24px;
+  }
+  .rs-modal-body {
+    margin-top : 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .rs-model-body > .rs-divider {
+    margin: 20px 0;
+  }
+}
+
+.offer-inbox-display-modal-header {
+  display: flex;
+  align-items: center;
+  line-height: 1em;
+  padding: 6px 0;
+}
+
+.offer-inbox-display-modal-header-address {
+  font-size: 18px;
+  font-weight: 700;
+  color: $text-header;
+  margin-left: 10px;
+}
+
+.offer-inbox-display-modal-header-date {
+  color: $text-content;
+  margin-left: 10px;
+}
+
+.offer-inbox-display-modal-subheader {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.offer-inbox-display-modal-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  .rs-btn-toolbar {
+    margin-top: 10px;
+  }
+  .rs-btn > svg {
+    margin-top: 3px;
+  }
+}
+
+.offer-inbox-display-modal-sections {
+  display: flex;
+  margin-top: 20px;
+  .rs-panel-body {
+    padding: 24px;
+  }
+}
+
+.offer-inbox-display-modal-details-panel {
+  flex: 2 1;
+  margin-right: 24px;
+}
+
+.offer-inbox-display-modal-timeline-panel {
+  flex: 1 0;
+  min-width: 250px;
+}

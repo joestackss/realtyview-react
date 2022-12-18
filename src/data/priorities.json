@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Low",
+    "value": "Low",
+    "role": "blue"
+  },
+  {
+    "label": "Medium",
+    "value": "Medium",
+    "role": "yellow"
+  },
+  {
+    "label": "High",
+    "value": "High",
+    "role": "red"
+  }
+]

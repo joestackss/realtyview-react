@@ -1,0 +1,46 @@
+@import '../colors';
+
+.rv-date-picker {
+  .rs-picker-toggle.rs-btn {
+    border-radius: 7px;
+    border: 1px solid $form-outline;
+    padding: 7px 12px;
+    font-weight: normal;
+    color: $text-header;
+    &:hover, &:active, &:focus, &.active {
+      &:not(.rs-picker-disabled) {
+        border-color: $primary;
+      }
+    }
+  }
+  &.rs-picker-has-value .rs-picker-toggle-value {
+    color: $btn-text-dark;
+  }
+  .rs-picker-toggle-caret {
+    display: none;
+  }
+}
+
+.rv-date-picker.rv-date-picker-subtle {
+  .rs-picker-toggle.rs-btn {
+    border: 1px solid transparent;
+    &:hover, &:active, &:focus, &.active {
+      &:not(.rs-picker-disabled) {
+        border-color: $primary;
+      }
+    }
+  }
+  &.rs-picker-disabled .rs-picker-toggle {
+    background-color: $white !important;
+  }
+}
+
+.rv-date-picker-menu-container {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.rv-date-picker-menu {
+  z-index: 1070;
+}

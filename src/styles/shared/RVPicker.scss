@@ -1,0 +1,94 @@
+@import '../colors';
+
+.rv-picker {
+  &.rs-picker-input {
+    padding: 3px 0;
+    border: 1px solid $form-outline;
+    border-radius: 7px;
+  }
+  .rs-picker-toggle,
+  .rs-picker-toggle.rs-btn-sm {
+    padding-left: 12px;
+    // border-radius: 7px;
+  }
+  &.rs-picker-has-value .rs-picker-toggle-value {
+    color: $btn-text-dark;
+  }
+  &:hover, &:active, &:focus-within {
+    &:not(.rs-picker-disabled){
+      border-color: $primary;
+    }
+  }
+}
+
+.rv-picker.rv-picker-subtle {
+  &.rs-picker-input {
+    border: 1px solid transparent;
+  }
+  .rs-picker-toggle-caret {
+    display: none;
+  }
+  &.rs-picker-disabled .rs-picker-toggle {
+    background-color: $white !important;
+  }
+  &:hover, &:active, &:focus-within {
+    &:not(.rs-picker-disabled){
+      border-color: $primary;
+    }
+  }
+}
+
+.rv-picker-menu {
+  border-radius: 7px;
+  .rs-picker-select-menu-item {
+    color: $text-content;
+    font-size: 14px;
+    &:hover,
+    &.rs-picker-select-menu-item-focus,
+    &.rs-picker-select-menu-item-active {
+      color: $text-header;
+      background-color: $dropdown-highlight;
+    }
+    &.rs-picker-select-menu-item-disabled,
+    &.rs-picker-select-menu-item-disabled:hover {
+      color: $form-disabled;
+    }
+  }
+
+  .rs-check-item {
+    color: $text-content;
+    font-size: 14px;
+    &:hover,
+    &.rs-check-item-focus,
+    &.rs-check-item-checked {
+      color: $text-header;
+      background-color: $dropdown-highlight;
+    }
+    .rs-checkbox-wrapper .rs-checkbox-inner::before {
+      border: 2px solid $primary;
+    }
+    &.rs-checkbox-checked .rs-checkbox-inner::before {
+      background-color: $primary;
+    }
+    .rs-checkbox-checker > label {
+      letter-spacing: normal;
+    }
+  }
+}
+
+.rv-picker .rs-picker-tag-wrapper {
+  .rs-tag {
+    background-color: $tag-base;
+    color: $tag-text;
+  }
+}
+
+.rv-picker-menu-container {
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+.rv-picker-menu {
+  z-index: 1070;
+}

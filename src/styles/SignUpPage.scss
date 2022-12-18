@@ -1,0 +1,91 @@
+.sign-up-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  main {
+    display: inline-grid;
+    width: 100%;
+    min-height: 100%;
+    grid-template-columns: 50% 50%;
+
+    .left {
+      position: relative;
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+
+      nav {
+        position: absolute;
+        top: 25px;
+
+        .logo {
+          color: #794cff;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 26px;
+
+          img {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .segment {
+        width: 460px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 0 4.8px 0.3px rgba(114, 124, 245, 0.2);
+        padding: 15px;
+
+        h2 {
+          font-size: 22px;
+          color: #59626a;
+          line-height: 30px;
+          margin-bottom: 5px;
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          color: #86959d;
+          font-size: 14px;
+          max-width: 291px;
+          margin: 15px auto;
+        }
+      }
+
+      .sign-up-success-segment {
+        button {
+          margin-top: 15px;
+        }
+      }
+
+      form#sign-up-form {
+        margin-top: 20px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+      background-image: url('../images/neighborhood-bg.jpg');
+      background-size: cover;
+      padding: 24px;
+
+      p {
+        color: #ffffff;
+        font-size: 26px;
+      }
+    }
+  }
+}

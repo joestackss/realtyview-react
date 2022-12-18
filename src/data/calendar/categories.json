@@ -1,0 +1,64 @@
+{
+  "categories": [
+    { 
+      "id": "0",
+      "name": "Work", 
+      "color": "purple-1"
+    },
+    { 
+      "id": "1",
+      "name": "Meeting", 
+      "color": "green-3"
+    },
+    { 
+      "id": "2",
+      "name": "Coding", 
+      "color": "red-2"
+    },
+    { 
+      "id": "3",
+      "name": "Design", 
+      "color": "yellow-1"
+    },
+    { 
+      "id": "4",
+      "name": "Presentation", 
+      "color": "blue-1"
+    },
+    { 
+      "id": "5",
+      "name": "Others", 
+      "color": "gray-1"
+    },
+    { 
+      "id": "7",
+      "name": "Work2", 
+      "color": "purple-2"
+    },
+    { 
+      "id": "8",
+      "name": "Meeting2", 
+      "color": "green-1"
+    },
+    { 
+      "id": "9",
+      "name": "Coding2", 
+      "color": "red-1"
+    },
+    { 
+      "id": "10",
+      "name": "Design2", 
+      "color": "green-2"
+    },
+    { 
+      "id": "11",
+      "name": "Presentation2", 
+      "color": "blue-2"
+    },
+    { 
+      "id": "12",
+      "name": "Others2", 
+      "color": "brown-1"
+    }
+  ]
+}

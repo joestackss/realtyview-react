@@ -1,0 +1,27 @@
+.select-relationship-type-modal {
+  h3 {
+    font-size: 18px;
+    color: #727cf5;
+    text-transform: uppercase;
+  }
+
+  .options {
+    display: flex;
+    margin-top: 20px;
+
+    .option-btn {
+      font-size: 14px;
+      text-transform: initial;
+      padding: 6px 24px;
+      margin-right: 10px;
+
+      input[type="checkbox"] {
+        display: none;
+      }
+    }
+
+    .option-btn.selected {
+      border: 2px solid grey;
+    }
+  }
+}

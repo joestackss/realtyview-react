@@ -1,0 +1,77 @@
+@import '../colors';
+
+.chat-conversation-profile {
+  position: relative;
+  .rs-divider {
+    margin: 15px 0;
+  }
+}
+
+.chat-conversation-profile-header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.chat-conversation-profile-avatar {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.chat-conversation-profile-header-content {
+  flex: 1;
+}
+
+.chat-conversation-profile-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.chat-conversation-profile-status {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: 500;
+  color: $text-content;
+  .chat-status-marker {
+    margin-right: 5px;
+  }
+}
+
+.chat-conversation-profile-controls {
+  flex-shrink: 0;
+  > .rs-btn:not(:first-child):not(.rs-btn-block) {
+    margin-left: 10px;
+  }
+}
+
+.chat-conversation-profile-control-btn.rs-btn {
+  padding: 10px 12px;
+  line-height: 0;
+}
+
+.chat-conversation-profile-detail-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height ease 0.5s;
+}
+
+.chat-conversation-profile-detail-container-open {
+  max-height: 180px;
+}
+
+.chat-conversation-profile-detail {
+  padding: 0 0 0 45px;
+}
+
+.chat-conversation-profile-detail-item {
+  margin-top: 15px;
+}
+
+.chat-conversation-profile-detail-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.chat-conversation-profile-detail-content {
+  font-size: 14px;
+  color: $text-content;
+}

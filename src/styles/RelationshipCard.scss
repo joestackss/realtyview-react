@@ -1,0 +1,32 @@
+.relationship-card {
+  .avatar {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffbc00;
+    margin-right: 15px;
+  }
+
+  .name {
+    color: #59626a;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .action-buttons {
+    margin-top: 10px;
+    margin-left: 70px;
+
+    button {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      margin-right: 5px;
+    }
+  }
+
+  ul.upcoming-tasks {
+    list-style-type: none;
+    padding: 0;
+  }
+}

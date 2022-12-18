@@ -1,0 +1,52 @@
+{
+  "conversations": [
+    {
+      "id": "0",
+      "name": null,
+      "member_ids": ["0", "1"],
+      "is_favorite": false
+    },
+    {
+      "id": "1",
+      "name": null,
+      "member_ids": ["0", "2"],
+      "is_favorite": false
+    },
+    {
+      "id": "2",
+      "name": null,
+      "member_ids": ["0", "3"],
+      "is_favorite": false
+    },
+    {
+      "id": "3",
+      "name": null,
+      "member_ids": ["0", "4"],
+      "is_favorite": false
+    },
+    {
+      "id": "4",
+      "name": null,
+      "member_ids": ["0", "5"],
+      "is_favorite": true
+    },
+    {
+      "id": "5",
+      "name": null,
+      "member_ids": ["0", "6"],
+      "is_favorite": false
+    },
+    {
+      "id": "6",
+      "name": null,
+      "member_ids": ["0", "7"],
+      "is_favorite": false
+    },
+    {
+      "id": "7",
+      "name": null,
+      "member_ids": ["0", "11"],
+      "is_favorite": false
+    }
+  ]
+}

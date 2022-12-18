@@ -1,0 +1,50 @@
+.relationship-details-page {
+  .relationship-details__data {
+    h4.section-title {
+      color: #727cf5;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    ul.documents-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        p.name {
+          font-weight: bold;
+        }
+
+        .file-details {
+          p {
+            margin-top: 0;
+          }
+
+          .file-details__name {
+            color: #727cf5;
+          }
+
+          .file-details__meta {
+            color: #707e91;
+          }
+        }
+
+        .rs-btn.rs-btn-subtle {
+          background: #eef2f7;
+        }
+
+        .rs-btn.rs-btn-icon > .rs-icon {
+          font-size: 20px;
+          padding: 4px 10px;
+          color: #707e91;
+        }
+      }
+    }
+  }
+}

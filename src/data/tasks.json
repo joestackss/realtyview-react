@@ -1,0 +1,103 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "taskType": "call",
+      "taskName": "Call Jane about the required documents",
+      "attachments": "",
+      "subTaskIcon": "task",
+      "subTasks": [{ "subTaskName": "Call Tita" }],
+      "dueDate": "10/20/2020, 11:00 PM",
+      "assignees": ["2", "3"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "Medium"
+    },
+    {
+      "id": 2,
+      "taskType": "peoples",
+      "taskName": "Weekly meeting with the team",
+      "attachments": "",
+      "subTaskIcon": "task",
+      "subTasks": [
+        { "subTaskName": "Call Tita" },
+        { "subTaskName": "Call Mama" }
+      ],
+      "dueDate": "10/21/2020, 3:00 PM",
+      "assignees": ["2", "3"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "High"
+    },
+    {
+      "id": 3,
+      "taskType": "call",
+      "taskName": "Call Caleb about the required documents",
+      "attachments": "",
+      "subTaskIcon": "",
+      "subTasks": [],
+      "dueDate": "10/21/2020, 5:00 PM",
+      "assignees": ["1", "2", "3"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "Medium"
+    },
+    {
+      "id": 4,
+      "taskType": "demo",
+      "taskName": "Tour / demo for Caleb Flakalar",
+      "attachments": "",
+      "subTaskIcon": "",
+      "subTasks": [],
+      "dueDate": "10/22/2020, 2:00 PM",
+      "assignees": ["3"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "Low"
+    },
+    {
+      "id": 5,
+      "taskType": "generic",
+      "taskName": "Draft the new contract for sales team",
+      "attachments": "paperclip",
+      "subTaskIcon": "task",
+      "subTasks": [{ "subTaskName": "Call Tita" }],
+      "dueDate": "10/23/20, 10:00 AM",
+      "assignees": ["6"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": ""
+    },
+    {
+      "id": 6,
+      "taskType": "generic",
+      "taskName": "Write a release note",
+      "attachments": "paperclip",
+      "subTaskIcon": "task",
+      "subTasks": [{ "subTaskName": "Call Tita" }],
+      "dueDate": "10/25/20, 10:00 AM",
+      "assignees": ["2"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "Low"
+    },
+    {
+      "id": 7,
+      "taskType": "demo",
+      "taskName": "Tour / demo for Kathryn Collier",
+      "attachments": "",
+      "subTaskIcon": "",
+      "subTasks": [],
+      "dueDate": "09/04/20, 10:00 AM",
+      "assignees": ["1"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "Medium"
+    },
+    {
+      "id": 8,
+      "taskType": "peoples",
+      "taskName": "Weekly meeting with the team",
+      "attachments": "",
+      "subTaskIcon": "task",
+      "subTasks": [{ "subTaskName": "Call Tita" }],
+      "dueDate": "09/06/20, 3:00 PM",
+      "assignees": ["1"],
+      "assigneeImage": "http://placehold.jp/20x20.png",
+      "priority": "High"
+    }
+  ]
+}

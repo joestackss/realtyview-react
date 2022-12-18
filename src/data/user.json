@@ -1,0 +1,52 @@
+{
+  "user": {
+    "id": "0",
+    "avatar": "",
+    "name": "Tom Jones",
+    "phone": "936-330-1634",
+    "email": "tom@jones.com",
+    "status": "busy"
+  },
+  "users": [
+    {
+      "id": "1",
+      "avatar": "https://api.adorable.io/avatars/285/tom@jones.png",
+      "firstname": "Tom",
+      "lastname": "Jones",
+      "phone": "936-330-1634",
+      "email": "tom@jones.com"
+    },
+    {
+      "id": "2",
+      "avatar": "https://api.adorable.io/avatars/285/mark@lopez.png",
+      "firstname": "mark",
+      "lastname": "lopez",
+      "phone": "936-330-1635",
+      "email": "mark.lopez@mailinator.com"
+    },
+    {
+      "id": "3",
+      "avatar": "https://api.adorable.io/avatars/285/cardi@b.png",
+      "firstname": "cardi",
+      "lastname": "b",
+      "phone": "936-330-1636",
+      "email": "cardi.b@mailinator.com"
+    },
+    {
+      "id": "4",
+      "avatar": "https://api.adorable.io/avatars/285/arriana@grander.png",
+      "firstname": "arriana",
+      "lastname": "grander",
+      "phone": "936-330-1637",
+      "email": "arriana.grander@mailinator.com"
+    },
+    {
+      "id": "5",
+      "avatar": "https://api.adorable.io/avatars/285/hellen@keller.png",
+      "firstname": "hellen",
+      "lastname": "keller",
+      "phone": "936-330-1637",
+      "email": "hellen.keller@mailinator.com"
+    }
+  ]
+}

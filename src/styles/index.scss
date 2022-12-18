@@ -1,0 +1,371 @@
+// Import Nunito font
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+body, html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #f6fafc;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a:link {
+  color: #727cf5;
+}
+
+p {
+  color: #59626a;
+}
+
+div#root {
+  height: 100%;
+}
+
+div#root > span:first-child {
+  height: 100%;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: rgb(127, 143, 164);
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rs-grid-container-fluid {
+  width: 100%;
+}
+
+.dot {
+  display: table;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.dot.cyan {
+  background-color: #38afd1;
+}
+
+.dot.red {
+  background-color: #fa5c7c;
+}
+
+.dot.violet {
+  background-color: #727cf5;
+}
+
+.dot.yellow {
+  background-color: #ffbc00;
+}
+
+.rs-btn {
+  padding: 8px 16px;
+  border-radius: 3px;
+}
+
+.rs-btn-primary {
+  background-color: #727cf5;
+}
+
+.rs-btn-primary:not(.rs-btn-disabled):hover,
+.rs-btn-primary:not(.rs-btn-disabled):focus {
+  background-color: #565db5;
+}
+
+.rs-btn-link, .rs-btn-link:hover {
+  color: #727cf5;
+}
+
+.rs-btn-grey {
+  background-color: #6c757d;
+  color: #ffffff;
+}
+
+.rs-btn-ghost {
+  color: #1d2830;
+  border: 1px solid #1d2830;
+}
+
+.rs-btn-lg {
+  font-weight: 600;
+}
+
+.rs-input {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 3px;
+  border: solid 1.5px #d6dbe0;
+  transition: all 0.2s ease 0s;
+  outline: transparent dashed 1px;
+}
+
+.rs-picker-select a {
+  border-radius: 3px;
+  border: solid 1.5px #d6dbe0;
+  line-height: 26px;
+}
+
+.rs-sidebar-wrapper.fixed {
+  position: fixed;
+  background: #313a46;
+  border-right: 1px solid #d9d9d9;
+  padding-top: 36px;
+  max-width: 260px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  transition: width 1s;
+}
+
+.rs-nav ul li a {
+  color: #ffffff!important;
+  opacity: 0.5;
+}
+
+.rs-nav ul li.rs-nav-item.rs-nav-item-active a {
+  opacity: 1;
+}
+
+.rs-sidenav .rs-nav.rs-nav-vertical ul > .rs-dropdown:not(:first-child), .rs-sidenav .rs-nav.rs-nav-vertical ul > .rs-nav-item:not(:first-child) {
+  height: 50px;
+}
+
+.rs-panel {
+  background: #ffffff;
+}
+
+.rs-nav-subtle.rs-nav-horizontal .rs-nav-item > .rs-nav-item-content::before {
+  background-color: rgb(121, 76, 255);
+}
+
+.rs-checkbox label {
+  text-transform: none;
+  font-size: 13px;
+}
+
+/**
+DatePicker Overwrite
+**/
+.rs-picker-date .rs-picker-toggle.rs-btn,
+.rs-picker-daterange .rs-picker-toggle.rs-btn {
+  padding-top: 11px!important;
+  padding-bottom: 11px!important;
+}
+
+.rs-picker-date .rs-picker-toggle.rs-btn .rs-picker-toggle-clean,
+.rs-picker-daterange .rs-picker-toggle.rs-btn .rs-picker-toggle-clean,
+.rs-picker-date .rs-picker-toggle.rs-btn .rs-picker-toggle-caret,
+.rs-picker-daterange .rs-picker-toggle.rs-btn .rs-picker-toggle-caret {
+  top: 11px;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+}
+
+.inline-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mt-xs {
+  margin-top: 5px;
+}
+
+.mt-sm {
+  margin-top: 10px;
+}
+
+.mt-md {
+  margin-top: 15px;
+}
+
+.mt-lg {
+  margin-top: 20px;
+}
+
+.mt-xl {
+  margin-top: 50px;
+}
+
+.hide {
+  display: none;
+}
+
+.page-context {
+  margin-left: 260px;
+  padding: 86px 15px;
+  background: inherit;
+  transition: margin-left 1s;
+  position: relative;
+}
+
+.page-context.stretched {
+  margin-left: 260px;
+}
+
+.page-context.isOpen.isDesktop {
+  margin-left: 260px;
+  width: calc(100vw - 260px);
+}
+
+.page-context.isDesktop {
+  margin-left: 70px;
+  width: calc(100vw - 70px);
+}
+
+.page-context.isMobile {
+  margin-left: 0px;
+  width: 100vw;
+}
+
+.page-context.isMobile {
+  margin-left: 0px;
+  width: 100vw;
+}
+
+.page-context-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.rs-btn {
+  letter-spacing: 0.5px;
+}
+
+.rs-btn-cyan {
+  background: #38afd1;
+  color: #ffffff;
+}
+
+button.rs-btn-ghost.rs-btn-cyan {
+  border: 1px solid #38afd1;
+  color: #38afd1;
+}
+
+.rs-btn-red {
+  background: #fff2f5;
+  border: 1px solid #fc9bae;
+  color: #fc9bae;
+}
+
+button.rs-btn-ghost.rs-btn-red {
+  border: 1px solid #fa5c7c;
+  color: #fa5c7c;
+}
+
+.rs-btn-violet {
+  background-color: rgba(168, 173, 249, 0.2);
+  color: #a8adf9;
+  border: 1px solid #a8adf9;
+}
+
+button.rs-btn-ghost.rs-btn-violet {
+  border: 1px solid #727cf5;
+  background: #727cf5;
+}
+
+button.rs-btn-ghost.rs-btn-violet.rs-btn-ghost {
+  background: transparent;
+  color: #727cf5;
+}
+
+.rs-btn-yellow {
+  background: rgba(255, 211, 115, 0.2);
+  color: #ffd373;
+  border: 1px solid #ffd373;
+}
+
+button.rs-btn-ghost.rs-btn-yellow {
+  border: 1px solid #ffbc00;
+  color: #ffbc00;
+}
+
+button.rs-btn-default.rs-btn-green {
+  border: 1px solid #08cf97;
+  background-color: #08cf97;
+}
+
+button.rs-btn-default.rs-btn-violet {
+  background-color: #727cf5;
+}
+
+/**
+RSuite Tag overwrites
+**/
+.rs-tag {
+  border-radius: 2px;
+}
+
+.rs-tag-violet {
+  background-color: #dbdcf8;
+  color: #727cf5;
+}
+
+.rs-tag-red {
+  background-color: #fddde4;
+  color: #fa5c7c;
+}
+
+.rs-tag-yellow {
+  background-color: #ffeecc;
+  color: #ffbc00;
+}
+
+.rs-tag-blue {
+  background-color: #daeef5;
+  color: #38afd1;
+}
+
+.rs-tag-green {
+  background-color: #ddf6ed;
+  color: #08cf97;
+}
+

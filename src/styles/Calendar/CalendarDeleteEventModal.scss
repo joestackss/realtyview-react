@@ -1,0 +1,20 @@
+@import '../colors';
+
+.calendar-delete-event-modal {
+  .rs-modal-dialog {
+    max-width: fit-content;
+    margin: auto;
+  }
+  .rs-modal-content {
+    padding: 24px;
+  }
+  .rs-modal-body {
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: $text-content;
+  }
+  .rs-modal-header-close {
+    display: none;
+  }
+}

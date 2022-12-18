@@ -1,0 +1,131 @@
+@import '../colors';
+
+.calendar-event-page {
+  display: flex;
+}
+
+.calendar-event-page .calendar-back-btn {
+  width: 42px;
+  height: 42px;
+  margin-right: 13px;
+  margin-left: -11px;
+  .rs-icon {
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    color: $form-outline;
+  }
+  flex-shrink: 0;
+}
+
+.calendar-event-form {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.calendar-event-title-input-wrapper {
+  display: flex;
+  .calendar-event-title-input {
+    height: 42px;
+    flex-grow: 1;
+  }
+  .calendar-event-submit-btn {
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
+}
+
+.calendar-event-date-input-group {
+  .rs-picker-toggle.rs-btn {
+    font-size: 14px;    
+    padding-top: 10.5px;
+    padding-bottom: 10.5px;
+  }
+
+  .calendar-event-date-input {
+    min-width: 120px;
+    margin-right: 10px;
+  }
+
+  .calendar-event-time-input {
+    min-width: 90px;
+    margin-right: 10px;
+  }
+
+  .calendar-event-date-separator {
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+}
+
+.calendar-event-options-input-group {
+  height: 42px;
+  .calendar-event-allday-checkbox {
+    width: fit-content;
+    .rs-checkbox-checker {
+      padding-left: 26px;
+    }
+    .rs-checkbox-wrapper {
+      left: 0;
+    }
+  }
+}
+
+.calendar-event-details {
+  margin-top: 42px;
+}
+
+.calendar-event-details-header {
+  color: $primary;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.calendar-event-details-input-group {
+  display: flex;
+  align-items: center;
+  .calendar-icon {
+    flex-shrink: 0;
+    margin-right: 15px;
+  }
+}
+
+.calendar-event-details-input {
+  flex-grow: 1;
+  overflow: auto;
+  font-size: 14px;  
+}
+
+.calendar-event-details-description-input textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 100;
+  resize: vertical;
+}
+
+// Adjustments because there are some spaces in the SVG.
+.calendar-event-details-description-input .calendar-icon {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.calendar-event-submit-btn {
+  min-height: 42px;
+}
+
+.calendar-event-guest-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $text-content;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.calendar-event-guest-delete-btn.rs-btn {
+  color: $form-icon;
+  > svg {
+    margin-top: 5px;
+  }
+}

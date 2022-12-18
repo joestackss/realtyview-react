@@ -1,0 +1,86 @@
+@import '../colors';
+
+@mixin rv-btn-contained(
+  $name, 
+  $palette, 
+  $palette-hover, 
+  $palette-active, 
+  $palette-shadow, 
+  $palette-text
+) {
+  .rv-btn.rv-btn-#{$name} {
+    background-color: $palette;
+    color: $palette-text;
+    box-shadow: 0 2px 4px $palette-shadow;
+  
+    &:not(.rs-btn-disabled):hover {
+      background-color: $palette-hover;
+      color: $palette-text;
+    }
+    
+    &:focus {
+      background-color: $palette;
+      color: $palette-text;
+    }
+  
+    &:active, &.active {
+      background-color: $palette-active;
+      color: $palette-text;
+    }
+  }
+}
+
+@include rv-btn-contained(primary, $primary, $primary-hover, $primary-active, $primary-shadow, $btn-text-light);
+@include rv-btn-contained(secondary, $secondary, $secondary-hover, $secondary-active, $secondary-shadow, $btn-text-light);
+@include rv-btn-contained(success, $success, $success-hover, $success-active, $success-shadow, $btn-text-light);
+@include rv-btn-contained(danger, $danger, $danger-hover, $danger-active, $danger-shadow, $btn-text-light);
+@include rv-btn-contained(warning, $warning, $warning-hover, $warning-active, $warning-shadow, $btn-text-dark);
+@include rv-btn-contained(info, $info, $info-hover, $info-active, $info-shadow, $btn-text-light);
+@include rv-btn-contained(dark, $dark, $dark-hover, $dark-active, $dark-shadow, $btn-text-light);
+@include rv-btn-contained(link-primary, $white, $light, $light, none, $primary);
+@include rv-btn-contained(link-light, $white, $light, $light, none, $text-content);
+
+@mixin rv-btn-outlined(
+  $name, 
+  $palette, 
+  $palette-hover, 
+  $palette-active,
+  $palette-shadow, 
+  $palette-text
+) {
+  .rv-btn.rv-btn-#{$name} {
+    background-color: $white;
+    color: $palette-text;
+    padding: 7px 15px; // offset borders
+    border: 1px solid $palette;
+    box-shadow: 0 2px 4px $palette-shadow;
+  
+    &:not(.rs-btn-disabled):hover {
+      background-color: $white;
+      border-color: $palette-hover;
+      color: $palette-text;
+    }
+    
+    &:focus {
+      background-color: $white;
+      border-color: $palette;
+      color: $palette-text;
+    }
+  
+    &:active {
+      background-color: $white;
+      border-color: $palette-active;
+      color: $palette-text;
+    }
+  }
+}
+
+@include rv-btn-outlined(outlined, $dark, $dark-hover, $dark-active, $dark-shadow, $btn-text-dark);
+
+.rs-dropdown-toggle.rv-btn {
+  padding-right: 32px;
+}
+
+.rs-picker-toggle.rv-btn {
+  border: none;
+}
